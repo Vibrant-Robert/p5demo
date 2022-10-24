@@ -1,0 +1,25 @@
+# for information & examples on how to fill this out correctly, see
+# https://cs.anu.edu.au/courses/comp1720/resources/faq/#statement-of-originality
+
+declaration: >-
+  I declare that everything I have submitted in this assignment is entirely my
+  own work, with the following exceptions:
+
+
+# add as many "url+licence+comment" entries as necessary
+# (or remove it altogether if you haven't used any external code)
+code:
+- comment: p5.sound.js
+  url: https://github.com/processing/p5.js-sound
+  licence: Jason Sigal
+
+# add as many "url+licence+comment" entries as necessary
+# (or remove it altogether if you haven't used any external assets)
+assets: 
+- comment: background_music
+  url:  https://pixabay.com/zh/music/search/mood
+  licence: free
+
+# sign *your* name and uid here
+name: Robert Zhao
+uid: u7149863
