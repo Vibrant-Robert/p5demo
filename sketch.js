@@ -42,23 +42,23 @@ function setup() {
   instructions.push(new Caption('What is time?', 30, [width / 2, height / 2, 600, 200], 0));
   instructions.push(new Caption('It flows relentlessly...', 30, [width / 2, height / 2, 600, 200], 0));
   instructions.push(new Caption('...no matter what people try to do', 30, [width / 2, height / 2, 600, 200], 0));
-  instructions.push(new Caption('This very moment...', 30, [width / 2, height / 2, 600, 200], 0));
-  instructions.push(new Caption('...are just like these dots.', 30, [width / 2, height / 2, 600, 200], 0));
+  // instructions.push(new Caption('This very moment...', 30, [width / 2, height / 2, 600, 200], 0));
+  // instructions.push(new Caption('...are just like these dots.', 30, [width / 2, height / 2, 600, 200], 0));
   
 
-  instructions.push(new Caption('It vanishes and reappears in next moment', 30, [width / 2, height / 2, 600, 200], 0));
-  instructions.push(new Caption('But they are all unique', 30, [width / 2, height / 2, 600, 200], 0));
-  instructions.push(new Caption('Try to drag your mouse across the screen', 30, [width / 2, height / 2, 600, 200],0 ));
-  instructions.push(new Caption('And click your mouse to clear the view', 30, [width / 2, height / 2, 600, 200], 0));
-  instructions.push(new Caption('And double click to randomize moments of random people', 30, [width / 2, height / 2, 600, 200], 0));
-  instructions.push(new Caption('But if we tie the moments up...', 30, [width / 2, height / 2, 600, 200], 0));
-  instructions.push(new Caption('Time has left trails.', 30, [width / 2, height / 2, 600, 200], 0));
+  // instructions.push(new Caption('It vanishes and reappears in next moment', 30, [width / 2, height / 2, 600, 200], 0));
+  // instructions.push(new Caption('But they are all unique', 30, [width / 2, height / 2, 600, 200], 0));
+  // instructions.push(new Caption('Try to drag your mouse across the screen', 30, [width / 2, height / 2, 600, 200],0 ));
+  // instructions.push(new Caption('And click your mouse to clear the view', 30, [width / 2, height / 2, 600, 200], 0));
+  // instructions.push(new Caption('And double click to randomize moments of random people', 30, [width / 2, height / 2, 600, 200], 0));
+  // instructions.push(new Caption('But if we tie the moments up...', 30, [width / 2, height / 2, 600, 200], 0));
+  // instructions.push(new Caption('Time has left trails.', 30, [width / 2, height / 2, 600, 200], 0));
 
-  instructions.push(new Caption('Sometimes your voice can make a difference', 30, [width / 2, height / 2, 600, 200], 0));
-  instructions.push(new Caption('Try to make some noise to the lines.\n(Press M to turn on/off your microphone)', 30, [width / 2, height / 2, 600, 200], 0));
-  instructions.push(new Caption('Maybe click your mouse and start over', 30, [width / 2, height / 2, 600, 200], 0));
-  instructions.push(new Caption('We are unable to stop the time to flow', 30, [width / 2, height / 2, 600, 200], 0));
-  instructions.push(new Caption('But we can change the direction and color of our life', 30, [width / 2, height / 2, 600, 200], 0));
+  // instructions.push(new Caption('Sometimes your voice can make a difference', 30, [width / 2, height / 2, 600, 200], 0));
+  // instructions.push(new Caption('Try to make some noise to the lines.\n(Press M to turn on/off your microphone)', 30, [width / 2, height / 2, 600, 200], 0));
+  // instructions.push(new Caption('Maybe click your mouse and start over', 30, [width / 2, height / 2, 600, 200], 0));
+  // instructions.push(new Caption('We are unable to stop the time to flow', 30, [width / 2, height / 2, 600, 200], 0));
+  // instructions.push(new Caption('But we can change the direction and color of our life', 30, [width / 2, height / 2, 600, 200], 0));
   instructions.push(new Caption('Now...', 30, [width / 2, height / 2, 600, 200], 0));
   instructions.push(new Caption('...enjoy the inner peace of this very moment\nNow you can change the modes by pressing 1 or 2', 30, [width / 2, height / 2, 600, 200],2000));
 
@@ -89,36 +89,36 @@ function draw() {
 
 
 
-  if (Mode === 0 || Mode === 1 ||Mode === 2 ) {
-    for(var i = 1; i < 6;i++){
-      if (instructions[i-1].getIsUsed() && !instructions[i].getIsActive()) {
-        instructions[i].activate();
-      }
-      instructions[i].show();
-    }
-    if(modeFirstTime[0]){
-      for(var i = 6; i < 13;i++){
-        if (instructions[i-1].getIsUsed() && !instructions[i].getIsActive()) {
-          instructions[i].activate();
-        }
-        instructions[i].show();
-      }
-    }
-    if(modeFirstTime[1]){
-      for(var i = 13; i < 20;i++){
-        if (instructions[i-1].getIsUsed() && !instructions[i].getIsActive()) {
-          instructions[i].activate();
-        }
-        instructions[i].show();
-      }
-      if(instructions[12].getIsUsed()){
-        modeFirstTime[0] = false;
-      }
-      if(instructions[instructions.length-1].getIsUsed()){
-        modeFirstTime[1] = false;
-      }
-    }
-  }
+  // if (Mode === 0 || Mode === 1 ||Mode === 2 ) {
+  //   for(var i = 1; i < 6;i++){
+  //     if (instructions[i-1].getIsUsed() && !instructions[i].getIsActive()) {
+  //       instructions[i].activate();
+  //     }
+  //     instructions[i].show();
+  //   }
+  //   if(modeFirstTime[0]){
+  //     for(var i = 6; i < 13;i++){
+  //       if (instructions[i-1].getIsUsed() && !instructions[i].getIsActive()) {
+  //         instructions[i].activate();
+  //       }
+  //       instructions[i].show();
+  //     }
+  //   }
+  //   if(modeFirstTime[1]){
+  //     for(var i = 13; i < 20;i++){
+  //       if (instructions[i-1].getIsUsed() && !instructions[i].getIsActive()) {
+  //         instructions[i].activate();
+  //       }
+  //       instructions[i].show();
+  //     }
+  //     if(instructions[12].getIsUsed()){
+  //       modeFirstTime[0] = false;
+  //     }
+  //     if(instructions[instructions.length-1].getIsUsed()){
+  //       modeFirstTime[1] = false;
+  //     }
+  //   }
+  // }
   if (Mode === 1) {
     noStroke();
     lines1.show();
